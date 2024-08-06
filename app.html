@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Performance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Sorting Performance</h1>
+        <form id="sortForm" class="mt-4">
+            <div class="form-group">
+                <label for="numbers">Enter Numbers (comma separated):</label>
+                <input type="text" class="form-control" id="numbers" placeholder="e.g., 5,3,8,1,2">
+            </div>
+            <button type="submit" class="btn btn-primary">Sort</button>
+        </form>
+        <div class="mt-4">
+            <h2>Results</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Algorithm</th>
+                        <th>Time (ms)</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTableBody">
+                    <!-- Results will be appended here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
