@@ -3,8 +3,8 @@ $(document).ready(function() {
         event.preventDefault();
         let numbers = $('#numbers').val().split(',').map(Number);
         $.ajax({
-            url: 'http://localhost:7280/api/sort',
-            type: 'POST',
+            url: 'https://localhost:7280/api/sort', 
+            type:'POST',
             contentType: 'application/json',
             data: JSON.stringify(numbers),
             success: function(response) {
